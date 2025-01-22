@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+<h2>Страница регистрации</h2>
+<form method="POST" enctype="multipart/form-data">
+    <label for="name">Имя:</label>
+    <input type="text" name="name" required><br>
+
+    <label for="surname">Фамилия:</label>
+    <input type="text" name="surname" required><br>
+
+    <label for="birthdate">Дата рождения:</label>
+    <input type="date" name="birthdate" required><br>
+
+    <label for="hobbies">Увлечения:</label>
+    <textarea name="hobbies" required></textarea><br>
+
+    <label for="avatar">Аватар:</label>
+    <input type="file" name="avatar" accept="image/*" required><br>
+
+    <input type="submit" value="Зарегистрироваться">
+</form>
+{% endblock %}

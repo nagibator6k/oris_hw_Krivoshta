@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Аккаунт{% endblock %}
+
+{% block content %}
+<h2>Ваш аккаунт</h2>
+<img src="{{ url_for('static', filename='uploads/' + avatar) }}" alt="Аватар" style="width:150px;height:auto;">
+<p>Имя: {{ name }}</p>
+<p>Фамилия: {{ surname }}</p>
+<p>Дата рождения: {{ birthdate }}</p>
+<p>Увлечения: {{ hobbies }}</p>
+{% endblock %}
